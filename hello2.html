@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>music beat</title>
+   </head>
+   <style>
+       *{
+           margin: 0; padding:0;
+           box-sizing: border-box;
+       }
+       html{
+           font-size: 62.5%;
+       }
+       .container{
+           background:#7d5a5a;
+       }
+       .container .heading{
+           font-size: 3rem;
+           padding:2rem 0;
+           text-align:center;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+           text-shadow: 6rem ,5rem 5rem #161212;
+           color:#d4afb6;
+       }
+   
+       .container .music-container{
+           display: flex;
+           align-items:center ;
+           flex-flow: column;
+       }
+       .container .music-container .box{
+           height: 15rem;
+           width: 80%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background:#e8aeb7;
+           border-radius: 3rem;
+           box-shadow: 6rem ,5rem 6rem #0d0e0f;
+           overflow: hidden;
+           margin: 1rem;
+   
+       }
+       
+   
+       .container .music-container .box .image{
+           height: 100%;
+           width: 25%;
+       }
+       .container .music-container.box .image img{
+   
+         height: 200%;
+         width: 300px;
+         object-fit:contain;
+   
+       }
+       .container .music-container .box .music{
+          width:50%;
+          height:50%;
+          
+       }
+       .image img{
+           height: 150px;
+         width: 350px;
+         object-fit:scale-down;
+         object-position: 5px 10%;
+   
+   
+       }
+       
+       .container .music-container .box .music audio{
+       
+           width: 100%;
+           outline:none;
+           
+       }
+       .container .music-container .box .music audio::-webkit-media-controls-eclosure{
+        background:none;
+       }
+       @media(max-width:600px){
+           .container.music-container.box{
+               height: 27rem;
+               width:90%;
+               flex-flow:column;
+           }
+           .container.music-container.box.image{
+               height: 80;
+               width: 100%;
+           }
+           .container.music-container.box.music{
+               height: 80%;
+               width: 100%;
+           }
+   
+   
+       }
+   </style>
+   <body>
+       
+       <div class="container">
+   
+           <div class="heading"><b>playlist of songs</b></div>
+           <div class="music-container">
+   
+   
+               <div class="box">
+                   <div  class="image">
+                       <img src="images/back.jpg" alt="">
+                   </div>
+                   <div class="music">
+                       <audio src="songs/coca cola.mp3" controls></audio>
+                   </div>
+                   </div>
+   
+               <div class="box">
+                       <div  class="image">
+                           <img src="images/pasoori.jpg" alt="">
+                       </div>
+                       <div class="music">
+                           <audio src="songs/Pasoori.mp3" controls></audio>
+                       </div>
+                       </div>
+   
+               <div class="box">
+                           <div  class="image">
+                               <img src="images/back1.jpg" alt="">
+                           </div>
+                           <div class="music">
+                               <audio src="songs/abhi to.mp3" controls></audio>
+                           </div>
+                           </div>
+       
+                <div class="box">
+                               <div  class="image">
+                                   <img src="images/darshan.jpg" alt="">
+                               </div>
+                               <div class="music">
+                                   <audio src="songs/Pyar Ho.mp3" controls></audio>
+                               </div>
+                               </div>
+               
+                <div class="box">
+                                   <div  class="image">
+                                       <img src="images/me rahoo.jpg" alt="">
+                                   </div>
+                                   <div class="music">
+                                       <audio src="songs/me rahoo.mp3" controls></audio>
+                                   </div>
+                                   </div>
+                                   
+       
+               </div>
+           </div>
+       </div>
+   </body>
+   </html>
